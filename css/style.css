@@ -571,7 +571,7 @@ a {
 color: #e0eaff;
     margin-bottom: 20px;
     text-align: center;
-    margin-top: -70px;
+    margin-top: -35px;
 }
 
 .education-degree {
@@ -584,4 +584,219 @@ color: #aeaeae;
 .education-school {
     font-size: 1em;
     color: #c7c7c7;
+}
+
+
+:root {
+  --main-padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 var(--main-padding);
+  }
+  
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .project-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .education-timeline {
+    flex-direction: column;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #contactForm {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .nav-list li:not(:last-child):not(:has(.nav-icon))::after {
+    margin-left: 15px;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+  }
+  
+  .projects-section {
+    margin-top: 150px;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .project-item {
+    height: auto;
+    padding: 15px;
+  }
+  
+  .project-image {
+    height: 160px;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  #contactForm {
+    padding: 20px;
+    height: auto;
+  }
+  
+  #contactForm textarea {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    padding-top: 80px;
+    transition: left 0.3s;
+    z-index: 999;
+  }
+  
+  .nav-list.active {
+    left: 0;
+  }
+  
+  .nav-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 20px;
+    z-index: 1000;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #00ffff;
+    position: absolute;
+    transition: all 0.3s;
+  }
+  
+  .nav-toggle span:nth-child(1) {
+    top: 0;
+  }
+  
+  .nav-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .nav-toggle span:nth-child(3) {
+    bottom: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 1em;
+  }
+  
+  .description {
+    font-size: 0.9em;
+  }
+  
+  .tech-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .education-skills li {
+    font-size: 0.9em;
+  }
+}
+
+/* Mantengo todos tus efectos originales exactamente igual */
+.project-item:hover {
+    box-shadow: 0 20px 48px 0 #00ffff77, 0 2px 8px 0 #00ffff55;
+    border-color: #00ffff;
+    background: rgba(40, 40, 80, 0.97);
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+.project-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+#contactForm button:hover {
+    background: linear-gradient(90deg, #4a00e0 0%, #110039 100%);
+    color: #fff;
+    transform: scale(1.04);
+}
+
+/* Mantengo tus animaciones originales */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s, transform 0.7s;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
