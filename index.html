@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script src="javascript/script.js"></script>
+
+    <title>Portafolio de Josue Marroquín</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-toggle" onclick="document.querySelector('.nav-list').classList.toggle('active')">
+            <span></span>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+            </li>
+            <li>
+                <a href="#Proyectos" class="nav-link">Proyectos</a>
+            </li>
+            <li>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/josue-marroquin-1b71b5351/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="nav-icon" src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                        alt="LinkedIn" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/jmarroquin-2023026" target="_blank" rel="noopener noreferrer">
+                    <img class="nav-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" />
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div>
+        <div id="sobre-mi">
+            <div class="container">
+                <div>
+                    <img class="profile-image" src="/img/foto.jpg"
+                        alt="Josue Marroquín">
+                </div>
+                <h1 class="title">Hola, soy Josue Marroquín</h1>
+                <p class="subtitle">Desarrollador Full Stack</p>
+                <p class="description">Apasionado por la tecnología y el desarrollo de software. Me encanta aprender
+                    nuevas cosas cada día, disfruto del desarrollo y la implementación de soluciones innovadoras
+                    para diversos problemas.</p>
+            </div>
+        </div>
+        <div id="Proyectos" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Proyectos destacados</h2>
+                <div class="project-list">
+                    <div class="project-item fade-in">
+                        <a href="./pages/fennec.html">
+                            <div class="project-image">
+                                <img src="https://i.postimg.cc/ryNg44tp/fennec.jpg" alt="Fennec Logo">
+                            </div>
+                            <h3>Fennec</h3>
+                            <p>Aplicación web desarrollada en Java EE para la gestión integral de compraventa de
+                                vehículos.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/jmarroquin-2023026/Fennec.git" target="_blank">
+                                    <img class="nav-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                        alt="GitHub" />
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-item fade-in">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/wTTKRgMS/imagen-2025-07-19-165046452.png" alt="To-Do List">
+                        </div>
+                        <h3>Lista de tareas</h3>
+                        <p>Página web desarrollada en React, capaz de editar, eliminar y agregar tareas a una lista
+                            de pendientes.</p>
+                        <div class="project-icons">
+                            <a href="https://github.com/jmarroquin-2023026/Ada-Proyect.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                            </a>
+                            <a href="https://adaproyect.vercel.app/" target="_blank" class="icon-link">
+                                <img class="project-icon"
+                                    src="https://www.citypng.com/public/uploads/preview/web-page-internet-network-white-icon-transparent-background-701751694974331jiucxqlxym.png"
+                                    alt="Sitio Web">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item fade-in">
+                        <a href="./pages/blog.html" class="project-main-link">
+                            <div class="project-image">
+                                <img src="https://i.postimg.cc/4dD6kJMn/Captura-de-pantalla-2025-07-19-172436.png"
+                                    alt="Blog">
+                            </div>
+                            <h3>Blog</h3>
+                            <p>Página web desarrollada en React y Node.js, capaz de ver publicaciones realizadas por
+                                alumnos y realizar y ver comentarios de dichas publicaciones.</p>
+                        </a>
+                        <div class="project-icons">
+                            <a href="https://github.com/jmarroquin-2023026/Ada-Proyect.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Backend</p>
+                            </a>
+                            <a href="https://github.com/jmarroquin-2023026/Ada-Proyect.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Frontend</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item fade-in">
+                        <a href="./pages/hoteles.html" class="project-main-link">
+                            <div class="project-image">
+                                <img src="https://i.postimg.cc/RCnFN13k/Captura-de-pantalla-2025-07-19-183646.png"
+                                    alt="Hotelería">
+                            </div>
+                            <h3>Gestión de Hoteles</h3>
+                            <p>Página web desarrollada en React y Node.js, capaz de ver, agregar, editar y eliminar
+                                hoteles, así como todo lo relacionado con ellos, desde reservas hasta habitaciones.</p>
+                        </a>
+                        <div class="project-icons">
+                            <a href="https://github.com/jmarroquin-2023026/Gestion-Hotelera.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Backend</p>
+                            </a>
+                            <a href="https://github.com/jmarroquin-2023026/Gestion-Hotelera-React.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Frontend</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item fade-in">
+                        <a href="./pages/almacenadora.html" class="project-main-link">
+                            <div class="project-image">
+                                <img src="https://i.postimg.cc/pXwKmXXZ/Captura-de-pantalla-2025-07-19-185518.png"
+                                    alt="Almacenadora">
+                            </div>
+                            <h3>Almacenadora</h3>
+                            <p>Página web desarrollada en React y Node.js, capaz de ver, agregar, editar y eliminar
+                                productos, así como todo lo relacionado con ellos.</p>
+                        </a>
+                        <div class="project-icons">
+                            <a href="https://github.com/jmarroquin-2023026/Almacenadora.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Backend</p>
+                            </a>
+                            <a href="https://github.com/jmarroquin-2023026/Almacenadora-React.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Frontend</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-item fade-in">
+                        <a href="./pages/mobiExpress.html" class="project-main-link">
+                            <div class="project-image">
+                                <img src="https://i.postimg.cc/ZKr4JLfV/Captura-de-pantalla-2025-07-19-211604.png"
+                                    alt="MobiExpress">
+                            </div>
+                            <h3>MobiExpress</h3>
+                            <p>Aplicación web capaz de automatizar inventario, pedidos y logística en una plataforma
+                                ágil. Reduce errores, ahorra tiempo y mejora la atención al cliente.</p>
+                        </a>
+                        <div class="project-icons">
+                            <a href="https://github.com/jmarroquin-2023026/MobiExpress-Node.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Backend</p>
+                            </a>
+                            <a href="https://github.com/jmarroquin-2023026/MobiExpress-React.git" target="_blank"
+                                class="icon-link">
+                                <img class="project-icon" src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+                                    alt="GitHub">
+                                <p>Frontend</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="tech-section">
+                    <h2 class="section-title">Tecnologías manejadas</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML5">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS3">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="ReactJS">
+                            <p>React</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=54087&format=png&color=000000" alt="NodeJS">
+                            <p>Node.js</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" alt="MongoDB">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=90519&format=png&color=000000" alt="SpringBoot">
+                            <p>Spring Boot</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000" alt="TailwindCSS">
+                            <p>Tailwind</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=24895&format=png&color=000000" alt="NPM">
+                            <p>NPM</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub">
+                            <p>GitHub</p>
+                        </div>
+                        <div class="tech-item fade-in">
+                            <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma">
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <form id="contactForm">
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    <input type="email" id="email" placeholder="Tu email" required>
+                    <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <p id="formMsg"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Josue Marroquín. Todos los derechos reservados.</p>
+            <div class="footer-links">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

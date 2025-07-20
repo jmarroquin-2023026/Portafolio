@@ -1,0 +1,226 @@
+/* Variables de color */
+:root {
+    --primary: #2962FF;
+    --dark: #0A192F;
+    --light: #CCD6F6;
+    --accent: #64FFDA;
+}
+
+/* Estilos base */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #08000f 0%, #0a0325 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Botón de regreso */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.back-button:hover {
+    color: var(--primary);
+    transform: translateX(-5px);
+}
+
+.back-button svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* Encabezado */
+.header {
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.header .description {
+    max-width: 700px;
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.gallery img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarjetas de tecnologías */
+.tech-stack {
+    margin: 4rem 0;
+}
+
+.tech-stack h2 {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.tech-stack h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent);
+    bottom: -5px;
+    left: 0;
+    opacity: 0.3;
+}
+
+.tech-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tech-card {
+    background: rgba(41, 98, 255, 0.1);
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tech-card:hover {
+    background: rgba(41, 98, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .header .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .tech-card {
+        padding: 0.6rem 1rem;
+    }
+}
+
+
+.tech-card.java {
+    --tech-color: #5382A1; 
+    border-color: rgba(83, 130, 161, 0.3);
+}
+
+
+
+.tech-card.jpa {
+    --tech-color: #DD4A3E; 
+    border-color: rgba(221, 74, 62, 0.3);
+}
+
+.tech-card.mysql {
+    --tech-color: #00758F; 
+    border-color: rgba(0, 117, 143, 0.3);
+}
+
+.tech-card.node {
+    --tech-color: #68A063; /* Verde Node.js */
+    border-color: rgba(104, 160, 99, 0.3);
+}
+
+.tech-card.mongodb {
+    --tech-color: #47A248; /* Verde MongoDB */
+    border-color: rgba(71, 162, 72, 0.3);
+}
+
+.tech-card.react {
+    --tech-color: #61DAFB; 
+    border-color: rgba(97, 218, 251, 0.3);
+}
+
+.tech-card:hover {
+    background: rgba(var(--tech-rgb), 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(var(--tech-rgb), 0.2);
+}
+
+.tech-card.react:hover {
+    --tech-rgb: 83, 130, 161;
+}
+
+
+.tech-card.jpa:hover {
+    --tech-rgb: 221, 74, 62;
+}
+
+.tech-card.mysql:hover {
+    --tech-rgb: 0, 117, 143;
+}
+
+.tech-card.node:hover {
+    --tech-rgb: 104, 160, 99;
+}
+
+.tech-card.react:hover {
+    --tech-rgb: 97, 218, 251;
+}
+
+.tech-card.mongodb:hover {
+    --tech-rgb: 71, 162, 72;
+}
